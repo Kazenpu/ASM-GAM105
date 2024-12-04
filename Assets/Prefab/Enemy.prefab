@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8180602706155574579}
   - component: {fileID: 3453191760286786950}
   - component: {fileID: 4768568865381217322}
+  - component: {fileID: -5727835323363580563}
+  - component: {fileID: 183842568867199015}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -78,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 4
   m_Sprite: {fileID: -7965226298060125710, guid: 58da0fc562bbb3e46aacf7de74d83466, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -120,7 +122,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6494550611333230525}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -173,7 +175,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.53924376, y: -0.2456553}
+  m_Offset: {x: -0.39496025, y: -0.3561224}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -183,5 +185,36 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.9191309, y: 1.2798178}
+  m_Size: {x: 0.7117234, y: 0.93263584}
   m_EdgeRadius: 0
+--- !u!114 &-5727835323363580563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494550611333230525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c5b82878feb1e40b4aed9f83824f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 0}
+  moveInterval: 2
+  detectionRange: 5
+  enemyPrefabAttack: {fileID: 1102808608653321292, guid: 8993112648973db43b919590099cdf02, type: 3}
+--- !u!114 &183842568867199015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494550611333230525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c30ae5a111c7604ba3623ed91e457b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 5278165546840152965, guid: 744051c31f6effb459fd0a70fa3e9582, type: 3}
+  offset: {x: -0.5, y: 0.5, z: 0}
+  maxHealth: 0

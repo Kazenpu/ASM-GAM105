@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Enemy
   - Border
+  - Weapon
+  - NPC
+  - Interact
+  - EnemyAttack
+  - Chest
   layers:
   - Default
   - TransparentFX

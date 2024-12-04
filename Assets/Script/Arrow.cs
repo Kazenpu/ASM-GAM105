@@ -5,7 +5,7 @@ public class Arrow : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Destroy(gameObject,3f);
+        Destroy(gameObject,2.5f);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
